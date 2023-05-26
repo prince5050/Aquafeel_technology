@@ -1,0 +1,167 @@
+{% extends 'layout/Base.html' %}
+{% block title %}Products-Aquafeel-Technologies{% endblock%}
+{%block content%}
+{% load static %}
+
+<section id="bottom">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Aquafeel Technologies Products</h2>
+            <div>
+            <div class="col-xs-4 pull-right">
+                        <form role="form" action="/search-product/">
+                                <input type="text" class="form-control search_box" autocomplete="off" placeholder="Search Products..">
+                        </form>
+                    </div>
+                </div>
+        </div>
+
+        <div class="row" style="margin-top:20px;">
+            {% for pro in product %}
+            <a href="/product/{{pro.name|cut:' '}}?pro_id={{pro.pk}}">
+              <div class="col-sm-6 col-md-3">
+                <div class="media services-wrap wow fadeInDown" style="padding: 7px 5px;">
+                    <img class="img-responsive" src="{{pro.image.url}}" height="200"
+                         width="250">
+                    <hr>
+                    <div class="media-body">
+                        <h3 class="media-heading">{{pro.name}}</h3>
+                        <p>{{pro.description}}</p>
+                    </div>
+                    <div class="media-footer">
+                        <button class="btn col-xs-12" style="color: #fff;
+                            background-color: #5cb85c;
+                            border-color: #4cae4c;">
+                            <b>Enquiry</b></button>
+                    </div>
+                </div>
+            </div></a>
+            {% endfor %}
+<!--            <div class="col-sm-6 col-md-3">-->
+<!--                <div class="media services-wrap wow fadeInDown" style="padding: 7px 5px;">-->
+<!--                    <img class="img-responsive" src="{% static 'images/slider/domestic-water-softener.png' %}" height="200"-->
+<!--                         width="250">-->
+<!--                    <hr>-->
+<!--                    <div class="media-body">-->
+<!--                        <h3 class="media-heading">SEO Marketing</h3>-->
+<!--                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>-->
+<!--                    </div>-->
+<!--                    <div class="media-footer">-->
+<!--                        <button class="btn col-xs-12" style="color: #fff;-->
+<!--                            background-color: #5cb85c;-->
+<!--                            border-color: #4cae4c;">-->
+<!--                            <b>Enquiry</b></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--           <div class="col-sm-6 col-md-3">-->
+<!--                <div class="media services-wrap wow fadeInDown" style="padding: 7px 5px;">-->
+<!--                    <img class="img-responsive" src="{% static 'images/slider/domestic-water-softener.png' %}" height="200"-->
+<!--                         width="250">-->
+<!--                    <hr>-->
+<!--                    <div class="media-body">-->
+<!--                        <h3 class="media-heading">SEO Marketing</h3>-->
+<!--                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>-->
+<!--                    </div>-->
+<!--                    <div class="media-footer">-->
+<!--                        <button class="btn col-xs-12" style="color: #fff;-->
+<!--                            background-color: #5cb85c;-->
+<!--                            border-color: #4cae4c;">-->
+<!--                            <b>Enquiry</b></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-sm-6 col-md-3">-->
+<!--                <div class="media services-wrap wow fadeInDown" style="padding: 7px 5px;">-->
+<!--                    <img class="img-responsive" src="{% static 'images/slider/domestic-water-softener.png' %}" height="200"-->
+<!--                         width="250">-->
+<!--                    <hr>-->
+<!--                    <div class="media-body">-->
+<!--                        <h3 class="media-heading">SEO Marketing</h3>-->
+<!--                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>-->
+<!--                    </div>-->
+<!--                    <div class="media-footer">-->
+<!--                        <button class="btn col-xs-12" style="color: #fff;-->
+<!--                            background-color: #5cb85c;-->
+<!--                            border-color: #4cae4c;">-->
+<!--                            <b>Enquiry</b></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-sm-6 col-md-3">-->
+<!--                <div class="media services-wrap wow fadeInDown" style="padding: 7px 5px;">-->
+<!--                    <img class="img-responsive" src="{% static 'images/slider/domestic-water-softener.png' %}" height="200"-->
+<!--                         width="250">-->
+<!--                    <hr>-->
+<!--                    <div class="media-body">-->
+<!--                        <h3 class="media-heading">SEO Marketing</h3>-->
+<!--                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>-->
+<!--                    </div>-->
+<!--                    <div class="media-footer">-->
+<!--                        <button class="btn col-xs-12" style="color: #fff;-->
+<!--                            background-color: #5cb85c;-->
+<!--                            border-color: #4cae4c;">-->
+<!--                            <b>Enquiry</b></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-sm-6 col-md-3">-->
+<!--                <div class="media services-wrap wow fadeInDown" style="padding: 7px 5px;">-->
+<!--                    <img class="img-responsive" src="{% static 'images/slider/domestic-water-softener.png' %}" height="200"-->
+<!--                         width="250">-->
+<!--                    <hr>-->
+<!--                    <div class="media-body">-->
+<!--                        <h3 class="media-heading">SEO Marketing</h3>-->
+<!--                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>-->
+<!--                    </div>-->
+<!--                    <div class="media-footer">-->
+<!--                        <button class="btn col-xs-12" style="color: #fff;-->
+<!--                            background-color: #5cb85c;-->
+<!--                            border-color: #4cae4c;">-->
+<!--                            <b>Enquiry</b></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-sm-6 col-md-3">-->
+<!--                <div class="media services-wrap wow fadeInDown" style="padding: 7px 5px;">-->
+<!--                    <img class="img-responsive" src="{% static 'images/slider/domestic-water-softener.png' %}" height="200"-->
+<!--                         width="250">-->
+<!--                    <hr>-->
+<!--                    <div class="media-body">-->
+<!--                        <h3 class="media-heading">SEO Marketing</h3>-->
+<!--                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>-->
+<!--                    </div>-->
+<!--                    <div class="media-footer">-->
+<!--                        <button class="btn col-xs-12" style="color: #fff;-->
+<!--                            background-color: #5cb85c;-->
+<!--                            border-color: #4cae4c;">-->
+<!--                            <b>Enquiry</b></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-sm-6 col-md-3">-->
+<!--                <div class="media services-wrap wow fadeInDown" style="padding: 7px 5px;">-->
+<!--                    <img class="img-responsive" src="{% static 'images/slider/domestic-water-softener.png' %}" height="200"-->
+<!--                         width="250">-->
+<!--                    <hr>-->
+<!--                    <div class="media-body">-->
+<!--                        <h3 class="media-heading">SEO Marketing</h3>-->
+<!--                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>-->
+<!--                    </div>-->
+<!--                    <div class="media-footer">-->
+<!--                        <button class="btn col-xs-12" style="color: #fff;-->
+<!--                            background-color: #5cb85c;-->
+<!--                            border-color: #4cae4c;">-->
+<!--                            <b>Enquiry</b></button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+        </div>
+
+
+
+    </div><!--/.container-->
+</section><!--/about-us-->
+
+{% endblock %}

@@ -1,0 +1,532 @@
+{% extends 'layout/Base.html' %}
+{% block title %}Home - Aqua{% endblock%}
+{%block content%}
+{% load static %}
+<section id="main-slider" class="no-margin">
+    <div class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#main-slider" data-slide-to="1"></li>
+            <li data-target="#main-slider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+
+            <div class="item active" style="background-image: url({% static 'images/slider/Aqua-slider-3.jpg'%})">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content">
+                                <h1 class="animation animated-item-1">Domestic Water Softener</h1>
+                                <h2 class="animation animated-item-2">5 Years warranty on pressure vessels and 1 year
+                                    warranty on complete system.</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="{% static 'images/slider/domestic-water-softener.png' %}"
+                                     class="img-responsive">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!--/.item-->
+
+            <div class="item" style="background-image: url({% static 'images/slider/Aqua-slider-2.jpg' %}); ">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content">
+                                <h1 class="animation animated-item-1">Commercial RO Plant</h1>
+                                <h2 class="animation animated-item-2">Complete new set up of Fully Automatic Commercial
+                                    RO Plant with 1 year warranty.</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="{% static 'images/slider/1000-lph-ro-plant-equipment.png' %}"
+                                     class="img-responsive">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div><!--/.item-->
+
+            <div class="item" style="background-image: url({% static 'images/slider/Aqua-slide-1.jpg' %})">
+                <div class="container">
+                    <div class="row slide-margin">
+                        <div class="col-sm-6">
+                            <div class="carousel-content">
+                                <h1 class="animation animated-item-1">STP / ETP</h1>
+                                <h2 class="animation animated-item-2">We are the manufacturer of Sewage Treatment Plant
+                                    and Effluent Treatment Plant in Civil and Mechanical both.</h2>
+                                <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs animation animated-item-4">
+                            <div class="slider-img">
+                                <img src="{% static 'images/slider/etp.png' %}" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+        </div><!--/.carousel-inner-->
+    </div><!--/.carousel-->
+    <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+        <i class="fa fa-chevron-left"></i>
+    </a>
+    <a class="next hidden-xs" href="#main-slider" data-slide="next">
+        <i class="fa fa-chevron-right"></i>
+    </a>
+</section><!--/#main-slider-->
+
+
+<section id="conatcat-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="media contact-info wow fadeInDown animated" data-wow-duration="1000ms"
+                     data-wow-delay="600ms"
+                     style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeInDown;">
+                    <div class="pull-left">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="media-body">
+                        <h2>Book Your Free Water Test</h2>
+                        <p>Dear Customer you can book free water test from here or you can directly Book on <b>+91
+                            9582173121</b></b> </p>
+
+                        <form>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your name" id="name">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="name">Email</label>
+                                    <input type="text" class="form-control" placeholder="Enter your name" id="email">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="name">Phone</label>
+                                    <input type="text" class="form-control" placeholder="Enter your phone" id="phone">
+                                </div>
+                                <div class="col-md-3" style="margin-top:25px;">
+                                    <!--                                            <div class="g-recaptcha" data-sitekey="6LeC4iQfAAAAAK4COaEGeuKQ3c9sIJ1gajvlhl3W"-->
+                                    <!--                                             style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>-->
+                                    <input type="submit" class="btn btn-info" value="Send">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/.container-->
+</section>
+
+<section id="feature">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Facilities</h2>
+        </div>
+
+        <div class="row">
+            <div class="features">
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <i class="fa fa-home"></i>
+                        <h2>Domestic water treatment</h2>
+                        <h3 style="margin-left:137px;">Domestic waste treatment ensures that all household sewage is
+                            properly treated to make it safe, clean and suitable for releasing back into the
+                            environment, lakes, or streams</h3>
+                    </div>
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <i class="fa fa-cogs"></i>
+                        <h2>Reverse Osmosis (RO) Water Treatment</h2>
+                        <h3 style="margin-left:137px;">The principle of reverse osmosis (RO) functions on the filtration
+                            method that results in the removal of a large number of contaminants and impurities from
+                            wastewater by applying pressure to it when it is on one side of a membrane.</h3>
+                    </div>
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <i class="fa fa-cloud-download"></i>
+                        <h2>Sewage Treatment Plants (STPs)</h2>
+                        <h3 style="margin-left:137px;">STPs play a critical role in keeping residents healthy and safe
+                            by cleaning wastewater with a bunch of chemical, physical and biological procedures before
+                            disposing it into the environment.</h3>
+                    </div>
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="feature-wrap">
+                        <i class="fa fa-leaf"></i>
+                        <h2>Effluent Treatment Plants (ETP’s)</h2>
+                        <h3 style="margin-left:137px;">Effluent water treatment plants, on the other hand, are quite
+                            the opposite as they treat industrial effluent, that is,
+                            the wastewater that occurs as a result of the flow of byproducts from industries.</h3>
+                    </div>
+                </div><!--/.col-md-4-->
+
+                <!--                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">-->
+                <!--                        <div class="feature-wrap">-->
+                <!--                            <i class="fa fa-cogs"></i>-->
+                <!--                            <h2>Sed do eiusmod</h2>-->
+                <!--                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>-->
+                <!--                        </div>-->
+                <!--                    </div>&lt;!&ndash;/.col-md-4&ndash;&gt;-->
+
+                <!--                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">-->
+                <!--                        <div class="feature-wrap">-->
+                <!--                            <i class="fa fa-heart"></i>-->
+                <!--                            <h2>Labore et dolore</h2>-->
+                <!--                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>-->
+                <!--                        </div>-->
+                <!--                    </div>&lt;!&ndash;/.col-md-4&ndash;&gt;-->
+            </div><!--/.services-->
+        </div><!--/.row-->
+    </div><!--/.container-->
+</section><!--/#feature-->
+
+<section id="services" class="service-item">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Our Products</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="media services-wrap wow fadeInDown">
+                    <div class="pull-left">
+                        <img class="img-responsive" src="{% static 'images/services/services1.png'%}">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">SEO Marketing</h3>
+                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="media services-wrap wow fadeInDown">
+                    <div class="pull-left">
+                        <img class="img-responsive" src="{% static 'images/services/services2.png'%}">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">SEO Marketing</h3>
+                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="media services-wrap wow fadeInDown">
+                    <div class="pull-left">
+                        <img class="img-responsive" src="{% static 'images/services/services3.png'%}">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">SEO Marketing</h3>
+                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="media services-wrap wow fadeInDown">
+                    <div class="pull-left">
+                        <img class="img-responsive" src="{% static 'images/services/services4.png'%}">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">SEO Marketing</h3>
+                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="media services-wrap wow fadeInDown">
+                    <div class="pull-left">
+                        <img class="img-responsive" src="{% static 'images/services/services5.png'%}">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">SEO Marketing</h3>
+                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="media services-wrap wow fadeInDown">
+                    <div class="pull-left">
+                        <img class="img-responsive" src="{% static 'images/services/services6.png'%}">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">SEO Marketing</h3>
+                        <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.row-->
+    </div><!--/.container-->
+</section><!--/#services-->
+
+<section id="recent-works">
+    <div class="container">
+        <div class="center wow fadeInDown">
+            <h2>Recent Works</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{% static 'images/portfolio/recent/item1.png' %}" alt="">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3><a href="#">Business theme</a></h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                            <a class="preview" href="{% static 'images/portfolio/full/item1.png'%}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{% static 'images/portfolio/recent/item2.png' %}" alt="">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3><a href="#">Business theme</a></h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                            <a class="preview" href="{% static 'images/portfolio/full/item2.png'%}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{% static 'images/portfolio/recent/item3.png' %}" alt="">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3><a href="#">Business theme </a></h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                            <a class="preview" href="{% static 'images/portfolio/full/item3.png' %}"
+                               rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{% static 'images/portfolio/recent/item4.png' %}" alt="">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3><a href="#">Business theme </a></h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                            <a class="preview" href="{% static 'images/portfolio/full/item4.png'%}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{% static 'images/portfolio/recent/item5.png'%}" alt="">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3><a href="#">Business theme</a></h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                            <a class="preview" href="{% static 'images/portfolio/full/item5.png'%}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{% static 'images/portfolio/recent/item6.png'%}" alt="">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3><a href="#">Business theme </a></h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                            <a class="preview" href="{% static 'images/portfolio/full/item6.png'%}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{% static 'images/portfolio/recent/item7.png' %}" alt="">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3><a href="#">Business theme </a></h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                            <a class="preview" href="{% static 'images/portfolio/full/item7.png'%}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 col-md-3">
+                <div class="recent-work-wrap">
+                    <img class="img-responsive" src="{% static 'images/portfolio/recent/item8.png'%}" alt="">
+                    <div class="overlay">
+                        <div class="recent-work-inner">
+                            <h3><a href="#">Business theme </a></h3>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                            <a class="preview" href="{% static 'images/portfolio/full/item8.png'%}" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/.row-->
+    </div><!--/.container-->
+</section><!--/#recent-works-->
+
+
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 wow fadeInDown">
+                <div class="tab-wrap">
+                    <div class="media">
+                        <div class="parrent pull-left">
+                            <ul class="nav nav-tabs nav-stacked">
+                                <li class=""><a href="#tab1" data-toggle="tab" class="analistic-01">Residential</a></li>
+                                <li class="active"><a href="#tab2" data-toggle="tab" class="analistic-02">Commercial</a>
+                                </li>
+                                <li class=""><a href="#tab3" data-toggle="tab" class="tehnical">Industrial</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="parrent media-body">
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="tab1">
+                                    <div class="media">
+                                        <div class="pull-left">
+                                            <img class="img-responsive" src="{% static 'images/tab2.png'%}">
+                                        </div>
+                                        <div class="media-body">
+                                            <h2>Residential</h2>
+                                            <p>Individual Houses Bungalows Apartments Gated Communities Farm Houses
+                                                Retirement Villas.</p>
+                                            <p>
+                                                Standard point-of-use water purifiers and centralized plants for
+                                                drinking and cooking
+                                                Branded air purifiers for bedrooms and halls
+                                                Point-of-entry raw water treatment and conditioning for general purposes
+                                                Filtered and treated water for landscaping and gardening
+                                                Swimming pool water filtration, disinfection and recycling
+                                                Sewage treatment and recycling
+                                                Rooftop Solar Energy Modules
+                                                Revamping, upgrades and modifications of existing plants | products
+                                                O&M and AMC contracts to improve operational efficiencies deliver
+                                                guaranteed performance and
+                                                eliminate maintenance hassles
+                                                Supply of regular consumables, chemicals and spares
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade active in" id="tab2">
+                                    <div class="media">
+                                        <div class="pull-left">
+                                            <img class="img-responsive" src="{% static 'images/tab1.png'%}">
+                                        </div>
+                                        <div class="media-body">
+                                            <h2>Commercial</h2>
+                                            <p>
+                                                Independent Offices
+                                                Commercial Buildings
+                                                Shopping Malls &
+                                                Restaurants
+                                                Software | IT Parks
+                                                Warehouses
+                                                Educational Institutions.
+
+                                            </p>
+                                            <p>
+                                                Aquafeel Technologies provides customized and cost-effective environmental solutions
+                                                for the needs of the following
+                                                commercial establishments and institutional sectors.
+                                                Independent Offices
+                                                Shopping Malls & Restaurants
+                                                Warehouses
+                                                Commercial Buildings
+                                                Software | IT Parks
+                                                Educational Institutions.
+                                            </p>
+                                            <p>
+                                                Apart from the environmental concerns, energy efficiency is also a key
+                                                priority for the management of
+                                                commercial buildings. Our expertise in delivering optimized solutions
+                                                adds immense value across the entire
+                                                spectrum of applications in terms of water conservation, recycling,
+                                                pollution control, waste management,
+                                                sustainable energy solutions through optimized processes.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="tab3">
+                                    <h2>Industrial</h2>
+                                    <p>Aquafeel Technologies provides complete and integrated environmental solutions for specific
+                                        needs of the following
+                                        industrial sector</p>
+                                    <p>
+                                        Hospitality
+                                        Manufacturing
+                                        Automotive
+                                        Healthcare
+                                        Food and Beverage
+                                        Chemicals.
+                                    </p>
+                                    <p>
+                                        Our total solutions capability adds value across the entire spectrum of applications. They effectively address
+the key concerns of our customers such as water conservation, water recycling | reuse, pollution control,
+waste management, sustainable energy solutions through optimized processes and enhanced efficiency.
+                                    </p>
+                                </div>
+
+
+                            </div> <!--/.tab-content-->
+                        </div> <!--/.media-body-->
+                    </div> <!--/.media-->
+                </div><!--/.tab-wrap-->
+            </div><!--/.col-sm-6-->
+
+
+        </div><!--/.row-->
+    </div><!--/.container-->
+</section><!--/#content-->
+
+
+{% endblock%}

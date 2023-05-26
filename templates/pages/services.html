@@ -1,0 +1,165 @@
+{% extends 'layout/Base.html' %}
+{% block title %}About-Aquafeel-Technologies{% endblock%}
+{%block content%}
+{% load static %}
+
+<section id="recent-works">
+    <div class="container">
+        <div class="center wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+            <h2>Our Services</h2>
+            <p>
+                We ensure that our customers can easily contact us at our Service Helpline Number. We are always ready
+                to serve our customers.
+
+                For any type of Service Request regarding Water Treatment and hard water solution, Please contact us at
+                our below mentioned details. We are dedicated to provide the best services and maintenance of all water
+                treatment products.
+
+                We are having more than 20 years of experience in water treatment industry so you will get the best
+                water treatment consultants here. Happy to serve you anytime and anywhere.
+            </p>
+        </div>
+        <div class="row">
+
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-6">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="/static/images/portfolio/recent/item1.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the
+                                        majority</p>
+                                    <a class="preview" href="/static/images/portfolio/full/item1.png" rel="prettyPhoto"><i
+                                            class="fa fa-eye"></i> View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-6">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="/static/images/portfolio/recent/item2.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme</a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the
+                                        majority</p>
+                                    <a class="preview" href="/static/images/portfolio/full/item2.png" rel="prettyPhoto"><i
+                                            class="fa fa-eye"></i> View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-6">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="/static/images/portfolio/recent/item3.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme </a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the
+                                        majority</p>
+                                    <a class="preview" href="/static/images/portfolio/full/item3.png" rel="prettyPhoto"><i
+                                            class="fa fa-eye"></i> View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-6">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="/static/images/portfolio/recent/item4.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">Business theme </a></h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the
+                                        majority</p>
+                                    <a class="preview" href="/static/images/portfolio/full/item4.png" rel="prettyPhoto"><i
+                                            class="fa fa-eye"></i> View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div><!--/.row-->
+            </div>
+            <div class="col-md-5">
+                  {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'success'%}
+                <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Success!</strong> {{message}}.
+                </div>
+            {% else %}
+            <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Error!</strong> {{message}}.
+                </div>
+            {% endif %}
+        {%endfor%}
+    {% endif %}
+                <div class="row contact-wrap" style="background-color:#00bcd445; border-radius:20px;">
+                    <div class="text-center">
+                        <h2 style="color:black">Enquiry For Service</h2>
+                    </div>
+                   <form method="POST" action="/contact-us/" id="formId">
+                       {% csrf_token %}
+                       <div class="col-sm-5 col-sm-offset-1">
+                            <div class="form-group">
+                                <label>Name *</label>
+                                <input type="text" name="name" class="form-control" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" name="email" class="form-control" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="number" name="mobile" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Company Name</label>
+                                <input type="text" name="company_name" class="form-control">
+                            </div>
+                           <input type="hidden" name="request_from" class="form-control" value="3">
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label>Subject *</label>
+                                <input type="text" name="subject" class="form-control" required="required">
+                            </div>
+                            <div class="form-group">
+                                <label>Message *</label>
+                                <textarea name="message" id="message" required="required" class="form-control"
+                                          rows="8"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" name="submit" class="btn btn-primary btn-lg">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div><!--/.row-->
+
+            </div>
+
+        </div>
+        <br><br>
+        <div class="">
+            <h2>
+                Aquafeel Technologies Water Treatment Company</h2>
+
+            <p>Service Helpline Number (Daily 10 am to 6 pm): <b>+91 9582173121</b></p>
+            <p><b>E-Mail:</b> info@aquafeeltechnologies.com</p>
+            <p><b>Website:</b> www.aquafeeltechnologies.in</p>
+        </div>
+
+    </div><!--/.container-->
+</section>
+{% endblock %}

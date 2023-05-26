@@ -1,0 +1,111 @@
+{% extends 'layout/Base.html' %}
+{% block title %}About-Aquafeel-Technologies{% endblock%}
+{%block content%}
+{% load static %}
+
+    <section id="about-us">
+        <div class="container">
+			<div class="center wow fadeInDown">
+				<h2>About Aquafeel Technologies</h2>
+			</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Aquafeel Technologies Water Treatment Company</h2>
+                    <p>
+                        Aquafeel Technologies Water Treatment Company is a CE certified & ISO 9001:2015 certified company.
+                        It is a leading manufacturer & supplier of  Industrial RO Plant, Waste Water
+                        Treatment Plant, Domestic Water Softener, Domestic RO, Industrial Water Softener, Activated
+                        Carbon Filters, Multi-Grade Filters, Pressure Pumps, Iron Remover, Sand Filters, Dosing
+                        System, DM Plants, Resins (Cation/Anion) Chemicals, STP and ETP.  We have a Research and
+                        Development (R&D) center in Delhi, India where we are continuously working on improving the
+                        quality of water and also maintain the quality for future use. It was established in 2000.
+                    </p>
+                    <h2>
+                        Facilities OF Aquafeel Technologies
+                    </h2>
+                    <li>All Water Treatment Solutions like Waste Water treatment, Hard Water treatment and Water Treatment available at one place</li>
+                   <li>The manufacturing unit in Delhi, India</li>
+                    <li>Aquafeel Technologies is a name for complete water treatment solutions</li>
+                    <li>Professionals having more than 7 years of Experience</li>
+                    <li>24/7 Support at +91 9582173121</li>
+                    <li>Free Demo services at home, offices, plants, factories, industries, schools, hospitals, etc.</li>
+                     </div>
+                 <div class="col-md-6">
+                       {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'success'%}
+                <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Success!</strong> {{message}}.
+                </div>
+            {% else %}
+            <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <strong>Error!</strong> {{message}}.
+                </div>
+            {% endif %}
+        {%endfor%}
+    {% endif %}
+                      <div class="row contact-wrap" style="background-color:#00bcd445; border-radius:20px;">
+                          <div class="text-center">
+                        <h2 style="color:black">Enquiry Now</h2>
+                    </div>
+                <form method="POST" action="/contact-us/" id="formId">
+                       {% csrf_token %}
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="name" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="number" name="mobile" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" name="company_name" class="form-control">
+                            <input type="hidden" name="request_from" class="form-control" value="2">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <input type="text" name="subject" class="form-control" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg">Submit Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div><!--/.row-->
+                </div>
+                <div class="col-md-12"><br><br>
+                    <p>
+                        Aquafeel Technologies Water Treatment Company is dedicated towards the customer satisfaction and emphasize on providing the
+                        best products and services.We are the International brand.We provide a complete range of water
+                        treatment products with a strong focus on technological advancement through continuous R&D, The company
+                        is adept to offer customized solutions as per the requirement of the highest standard. A pioneer in this
+                        field, Aquafeel Technologies Water Treatment company provides a complete range of Water Treatment, Waste Water
+                        Treatment, Domestic Water Softener, Industrial RO Plant etc. Technologies, Products and Services enable
+                        us to offer a Total Water Treatment Management solution for Industrial, Commercial, Residential and
+                        Institutional purpose.
+                        Our water treatment systems are not only for drinking purpose but also for bathing, washing and other
+                        household needs .Our mission is to provide safe and pure water for everybody. Now you can be 100% sure
+                        for safe and best service and sales provided by Aquafeel Technologies Water Treatment Company.
+                    </p>
+                </div>
+            </div>
+
+
+
+		</div><!--/.container-->
+    </section><!--/about-us-->
+{% endblock %}
